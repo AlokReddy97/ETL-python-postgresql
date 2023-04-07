@@ -5,7 +5,7 @@ This Repo will Tranform csv files and insert the data to a postgresql table / po
 ![Flow chart ETL](https://github.com/AlokReddy97/ETL-python-postgresql/raw/main/Flow_chart_ETL.png)
 
 
-python3 make_trimmedcsv.py zillow.csv 4
+alok@DESKTOP-UIKT6LM:/mnt/c/Users/Alok/Downloads/finaldemo/ETL$ python3 make_trimmedcsv.py zillow.csv 4
 
 CSV file 'zillow.csv' processed successfully and saved as 'processed/zillow/zillow_2023-04-06_07-55-13.csv'.
 
@@ -53,5 +53,12 @@ CREATE TABLE
 
 Insert Query: INSERT INTO zillow (Index, LivingSpacesqft, Beds, Baths, Zip, Year, ListPrice, test) VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
 
-Values: [(10, 1997, 3, 3, 32311, 2006, 295000, 1), (11, 2097, 4, 3, 32311, 2016, 290000, 1), (12, 3200, 5, 4, 32312, 1964, 465000, 1), (13, 4892, 5, 6, 32311, 2005, 799900, 1), (14, 1128, 2, 1, 32303, 1955, 89000, 1), (15, 1381, 3, 2, 32301, 2006, 143000, 1), (16, 4242, 4
+Values: [(10, 1997, 3, 3, 32311, 2006, 295000, 1), (11, 2097, 4, 3, 32311, 2016, 290000, 1), (12, 3200, 5, 4, 32312, 1964, 465000, 1), (13, 4892, 5, 6, 32311, 2005, 799900, 1), (14, 1128, 2, 1, 32303, 1955, 89000, 1), (15, 1381, 3, 2, 32301, 2006, 143000, 1), (16, 4242, 4, 5, 32303, 2007, 569000, 1), (17, 2533, 3, 2, 32310, 1991, 365000, 1), (18, 1158, 3, 2, 32303, 1993, 155000, 1), (19, 2497, 4, 4, 32309, 1990, 289000, 1), (20, 4010, 5, 3, 32309, 2002, 549900, 1)]
 
+Do you want to insert all rows? Press 1 to confirm, any other key to skip: 1
+
+CSV data inserted successfully!
+
+INSERT 0 1
+
+CSV file saved in archived/zillow/zillow_2023-04-06_07-55-34.csv
