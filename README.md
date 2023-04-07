@@ -153,10 +153,13 @@ testing ,all, cases, csvs
 
  8, 9999, 4, 3,   32312, 2016, 399000
 
- 9, 2400, 4, 4,   32312, 2002, 613000```
+ 9, 2400, 4, 4,   32312, 2002, 613000
+ ```
 
 ## python terminal command
-```python3 make_trimmedcsv.py zillow.csv 4```
+```
+python3 make_trimmedcsv.py zillow.csv 4
+```
 ### Terminal output
 
 CSV file 'zillow.csv' processed successfully and saved as 'processed/zillow/zillow_2023-04-06_08-13-36.csv'.
@@ -171,7 +174,9 @@ Headers are not matching so quitting
 
 
 ## python terminal command
-```python3 make_trimmedcsv.py zillow.csv 4```
+```
+python3 make_trimmedcsv.py zillow.csv 4
+```
 ### Terminal output
 
 CSV file 'zillow.csv' processed successfully and saved as 'processed/zillow/zillow_2023-04-06_08-19-41.csv'.
@@ -206,9 +211,9 @@ Error occurred: cursor already closed
 
 ## Data inserted to the database
 
-db1=> ```select * from zillow;```
-
-db1=> select * from zillow;
+db1=> ```
+select * from zillow;
+```
 
  index | livingspacesqft | beds | baths |  zip  | year | listprice | test
 
